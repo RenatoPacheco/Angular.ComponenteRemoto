@@ -18,7 +18,9 @@
       "dom"
     ],
     "paths": {
-      "@app/*": ["./src/app/*"]
+      "@app/*": ["./src/app/*"],
+      "@app-cabecalho/*": ["./projects/cabecalho/src/app/*"],
+      "@app-rodape/*": ["./projects/rodape/src/app/*"],
     }
   }
 }
