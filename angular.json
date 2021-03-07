@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Objetivo-Portal-Componente"
+    }
+  },
+  "defaultProject": "Objetivo-Portal-Componente",
+  "cli": {
+    "analytics": false
+  }
 }
