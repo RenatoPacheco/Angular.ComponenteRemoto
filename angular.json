@@ -136,7 +136,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
             "outputPath": "dist/cabecalho",
             "index": "projects/cabecalho/src/index.html",
@@ -185,7 +185,7 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "cabecalho:build"
           },
@@ -202,7 +202,7 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
             "main": "projects/cabecalho/src/test.ts",
             "polyfills": "projects/cabecalho/src/polyfills.ts",
