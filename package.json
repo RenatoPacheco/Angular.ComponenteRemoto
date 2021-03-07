@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "serve:cabecalho": "ng serve --project cabecalho",
     "build:cabecalho": "ng build --prod --project cabecalho --single-bundle --output-hashing none",
+    "serve:rodape": "ng serve --project rodape",
     "build:rodape": "ng build --prod --project rodape --single-bundle --output-hashing none"
   },
   "private": true,
