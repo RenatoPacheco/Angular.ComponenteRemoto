@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:cabecalho": "ng build --prod --project cabecalho --single-bundle --output-hashing none",
+    "build:rodape": "ng build --prod --project rodape --single-bundle --output-hashing none"
   },
   "private": true,
   "dependencies": {
