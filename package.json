@@ -9,9 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "serve:cabecalho": "ng serve --project cabecalho",
+    "serve:cabecalho": "ng serve --project cabecalho --port 4300",
     "build:cabecalho": "ng build --prod --project cabecalho --single-bundle --output-hashing none",
-    "serve:rodape": "ng serve --project rodape",
+    "serve:rodape": "ng serve --project rodape --port 4400",
     "build:rodape": "ng build --prod --project rodape --single-bundle --output-hashing none"
   },
   "private": true,

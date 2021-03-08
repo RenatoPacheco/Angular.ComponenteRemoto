@@ -1,27 +1,25 @@
 # Angular Componente Remoto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.3.
+Esse projeto é para testar a criação e uso de componentes remotos, identificar os problemas e ter uma descrição do processo.
 
-## Development server
+## Servidor de desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Exercute `npm run serve:cabecalho` para iniciar o servidor do componete cabeçalho em [./projects/cabecalho/src](projects/cabecalho/src). A url de navegação é `http://localhost:4300/`.
 
-## Code scaffolding
+Exercute `npm run serve:rodape` para iniciar o servidor do componete rodapé em [./projects/rodape/src](projects/rodape/src). A url de navegação é `http://localhost:4400/`.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Exercute `npm run serve` para iniciar o servidor da aplicação base em [./src](src), que chama os componentes remoto. A url de navegação é `http://localhost:4200/`.
 
-## Build
+Para pode acessar os cmponentes dorante o desenvolvimento do projeto base, não esquça de gerar os arquivos de produção dos componentes, e fazer da pasta dist um host na porta 8080, que é o endereço que o projeto base etá configurado para chamar os componentes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Durante o desenvolvimento desse projeto eu usei o [live-server](https://www.npmjs.com/package/live-server).
 
-## Running unit tests
+```
+live-server ./dist
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Gerar arquivos de produção
 
-## Running end-to-end tests
+Exercute `npm run build:cabecalho` para gerar os arquivos de produção do componente de cabeçalho, na pasta **./dist/cabecalho**.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Exercute `npm run build:rodape` para gerar os arquivos de produção do componete de rodapé, na pasta **./dist/rodape**.
