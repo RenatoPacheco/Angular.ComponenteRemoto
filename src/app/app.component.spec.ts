@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Objetivo-Portal-Componente'`, () => {
+  it(`should have as title 'Angular-Componente-Remoto'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Objetivo-Portal-Componente');
+    expect(app.title).toEqual('Angular-Componente-Remoto');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('Objetivo-Portal-Componente app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('Angular-Componente-Remoto app is running!');
   });
 });

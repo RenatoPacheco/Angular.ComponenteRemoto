@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Objetivo-Portal-Componente';
+  title = 'Angular-Componente-Remoto';
 
   ngOnInit(): void {
     const cabecalho = document.createElement('script');

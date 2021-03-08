@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Objetivo-Portal-Componente": {
+    "Angular-Componente-Remoto": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Objetivo-Portal-Componente",
+            "outputPath": "dist/Angular-Componente-Remoto",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Objetivo-Portal-Componente:build"
+            "browserTarget": "Angular-Componente-Remoto:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Objetivo-Portal-Componente:build:production"
+              "browserTarget": "Angular-Componente-Remoto:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Objetivo-Portal-Componente:build"
+            "browserTarget": "Angular-Componente-Remoto:build"
           }
         },
         "test": {
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Objetivo-Portal-Componente:serve"
+            "devServerTarget": "Angular-Componente-Remoto:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Objetivo-Portal-Componente:serve:production"
+              "devServerTarget": "Angular-Componente-Remoto:serve:production"
             }
           }
         }
@@ -367,7 +367,7 @@
       }
     }
   },
-  "defaultProject": "Objetivo-Portal-Componente",
+  "defaultProject": "Angular-Componente-Remoto",
   "cli": {
     "analytics": false
   }

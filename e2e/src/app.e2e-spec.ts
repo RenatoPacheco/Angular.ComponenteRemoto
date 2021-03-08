@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Objetivo-Portal-Componente app is running!');
+    expect(page.getTitleText()).toEqual('Angular-Componente-Remoto app is running!');
   });
 
   afterEach(async () => {
