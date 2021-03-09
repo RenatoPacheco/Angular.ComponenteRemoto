@@ -3,13 +3,20 @@ import { Injector, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { createCustomElement } from '@angular/elements';
+import { MenuOnComponent } from './menu-on/menu-on.component';
+import { MenuOffComponent } from './menu-off/menu-off.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MenuOnComponent,
+    MenuOffComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: []
 })

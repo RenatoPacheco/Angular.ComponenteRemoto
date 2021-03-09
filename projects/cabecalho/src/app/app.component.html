@@ -1,1 +1,4 @@
-<p>Componente Cabeçalho</p>
+<div class="container">
+  <app-menu-on *ngIf="exibirMenu" ></app-menu-on>
+  <app-menu-off *ngIf="!exibirMenu"></app-menu-off>
+</div>

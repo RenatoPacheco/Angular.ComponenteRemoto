@@ -18,7 +18,7 @@ export class AppModule {
 
   }
 
-  ngDoBootstrap() {
+  ngDoBootstrap(): void {
     const element = createCustomElement(AppComponent, { injector: this.injector });
     customElements.define('remote-app-rodape', element);
   }
