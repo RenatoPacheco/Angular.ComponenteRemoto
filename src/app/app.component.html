@@ -1,3 +1,8 @@
-<remote-app-cabecalho></remote-app-cabecalho>
-<p>Projeto Teste</p>
+<remote-app-cabecalho (autenticado)="autenticar($event.detail)"></remote-app-cabecalho>
+<div class="container">
+  <br><br>
+  <h2 *ngIf="autenticado" class="text-center">Autenticado</h2>
+  <h2 *ngIf="!autenticado" class="text-center">Não autenticado</h2>
+  <br><br>
+</div>
 <remote-app-rodape></remote-app-rodape>
