@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Angular-Componente-Remoto';
   autenticado = false;
+  saida = false;
 
   ngOnInit(): void {
     const cabecalho = document.createElement('script');
@@ -19,7 +20,11 @@ export class AppComponent implements OnInit {
     document.body.appendChild(rodape);
   }
 
-  public autenticar(valor: boolean): void {
+  autenticar(valor: boolean): void {
     this.autenticado = valor === true;
+  }
+
+  sair(): void {
+    this.saida = !this.saida;
   }
 }

@@ -1,8 +1,14 @@
-<remote-app-cabecalho (autenticado)="autenticar($event.detail)"></remote-app-cabecalho>
+<remote-app-cabecalho
+  [saida]="saida"
+  (autenticado)="autenticar($event.detail)">
+</remote-app-cabecalho>
 <div class="container">
   <br><br>
-  <h2 *ngIf="autenticado" class="text-center">Autenticado</h2>
-  <h2 *ngIf="!autenticado" class="text-center">Não autenticado</h2>
+  <div *ngIf="autenticado" class="text-center">
+    <h2>Autenticado</h2>
+    <button (click)="sair()" class="btn btn-outline-danger">Sair</button>
+  </div>
+  <h2 *ngIf="!autenticado" class="text-center" >Não autenticado</h2>
   <br><br>
 </div>
 <remote-app-rodape></remote-app-rodape>

@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, OnDestroy, EventEmitter, Output, Input } from '@angular/core';
 
 import { AutenticacaoService } from './services';
-import { element } from 'protractor';
 
 @Component({
   selector: 'app-root',
@@ -15,8 +14,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
   }
 
-  public exibirMenu = false;
-  @Output() public readonly autenticado: EventEmitter<boolean> = new EventEmitter();
+  @Output() readonly autenticado: EventEmitter<boolean> = new EventEmitter();
+  @Input() set saida(valor: boolean) {
+    this.autenticacaoService.sair();
+  }
+
+  exibirMenu = false;
 
   ngOnInit(): void {
     this.autenticacaoService.eventAutenticado.subscribe({
